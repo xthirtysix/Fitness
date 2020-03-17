@@ -1,3 +1,7 @@
-h1 {
-  color: red;
-}
+@import "../../node_modules/normalize.css/normalize";
+@import "variables.scss";
+@import "fonts.scss";
+@import "base.scss";
+
+// Blocks
+@import "./blocks/container.scss";

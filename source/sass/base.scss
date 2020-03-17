@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: $roboto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: $foreground;
+
+  background-color: $background;
+}
+
+.body-lock {
+  width: 100%;
+  position: fixed;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
