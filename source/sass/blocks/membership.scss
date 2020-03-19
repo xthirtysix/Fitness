@@ -1,13 +1,13 @@
 .membership {
   position: relative;
-  padding: 120px 0;
+  padding: 118px 0 120px;
   background-color: $background-light;
 
   &::before {
     content: "";
     position: absolute;
     z-index: 0;
-    bottom: -150px;
+    bottom: -152px;
     right: 0;
     display: block;
     width: 287px;
@@ -26,6 +26,7 @@
 }
 
 .membership__header {
+  margin-bottom: 23px;
   text-align: center;
 }
 
@@ -34,7 +35,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 341px;
-  margin: 0 auto 39px;
+  margin: 0 auto 37px;
   padding: 0;
   list-style: none;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
@@ -42,7 +43,7 @@
 
 .membership__link {
   display: block;
-  padding: 15px 0;
+  padding: 12px 0;
   font-family: $roboto;
   font-weight: 400;
   font-size: 20px;
@@ -50,6 +51,7 @@
   text-decoration: none;
   color: rgba(16, 38, 84, 0.5);
   transition: 0.4s ease;
+  outline: none;
 
   &--active {
     position: relative;

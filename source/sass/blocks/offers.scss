@@ -1,7 +1,12 @@
 .offers {
-  padding-top: 154px;
+  padding-top: 118px;
   padding-bottom: 60px;
   background-color: $background;
+}
+
+.offers__header {
+  margin-bottom: 52px;
+  text-align: center;
 }
 
 .offers__wrapper {
@@ -41,12 +46,12 @@
   min-height: 197px;
   height: 100%;
   flex-direction: column;
-  padding: 35px;
+  padding: 19px 28px 29px;
   color: $accent-blue;
   background-color: $background;
 }
 
-.offers__header {
+.offers__card-header {
   margin-top: 0;
   font-weight: 700;
   font-size: 26px;
@@ -54,7 +59,7 @@
 }
 
 .offers__description {
-  margin-top: 0;
+  margin-top: -23px;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
@@ -65,15 +70,16 @@
   align-self: flex-start;
   position: relative;
   margin-top: auto;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-decoration: none;
   color: $accent-blue;
   transition: 0.4s ease;
+  outline: none;
 
   &::after {
     content: "";

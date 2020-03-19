@@ -1,5 +1,5 @@
 .free-training {
-  padding-top: 70px;
+  padding-top: 67px;
   width: 50%;
   max-width: 480px;
   margin-right: auto;
@@ -7,6 +7,7 @@
 
 .free-training__header {
   margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .free-training__form {
@@ -20,13 +21,14 @@
   box-sizing: border-box;
   width: 48%;
   max-width: 190px;
+  margin-bottom: 27px;
   border-bottom: 1px solid $background;
 }
 
 input[type="text"],
 input[type="tel"] {
   width: 100%;
-  padding: 9px 0;
+  padding: 6px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -45,6 +47,7 @@ input[type="tel"] {
 
 .free-training__button {
   width: 100%;
-  margin-top: 30px;
-  padding: 21px;
+  padding: 17px;
+  font-size: 14px;
+  line-height: 16px;
 }
