@@ -1,0 +1,11 @@
+.communications {
+  padding-bottom: 40px;
+  border-top: 1px solid #74819c;
+  background: linear-gradient(90deg, rgba(9, 9, 121, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+
+.communications__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

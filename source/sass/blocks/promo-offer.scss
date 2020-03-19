@@ -1,0 +1,48 @@
+.promo-offer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  min-height: 462px;
+  padding: 45px;
+  padding-right: 326px;
+  color: $foreground-light;
+  background-color: $accent-red;
+  background-image: url("../img/offer.jpg");
+  background-position: right center;
+  background-size: 280px 462px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.promo-offer__header {
+  position: relative;
+  max-width: 150px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 156%;
+
+  &--accented {
+    display: block;
+    position: relative;
+    top: -20px;
+    left: 0;
+    font-size: 70px;
+    line-height: 156%;
+  }
+}
+
+.promo-offer__description {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.promo-offer__link {
+  color: $foreground-light;
+
+  &::after {
+    background-color: $background;
+  }
+}

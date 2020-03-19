@@ -1,0 +1,83 @@
+.membership {
+  position: relative;
+  padding: 120px 0;
+  background-color: $background-light;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: -150px;
+    right: 0;
+    display: block;
+    width: 287px;
+    height: 494px;
+    background-image: url("../img/rod-pancakes.png");
+  }
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    &::before {
+      width: 574px;
+      height: 987px;
+      background-image: url("../img/rod-pancakes@2x.png");
+    }
+  }
+}
+
+.membership__header {
+  text-align: center;
+}
+
+.membership__duration-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 341px;
+  margin: 0 auto 39px;
+  padding: 0;
+  list-style: none;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.membership__link {
+  display: block;
+  padding: 15px 0;
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-decoration: none;
+  color: rgba(16, 38, 84, 0.5);
+  transition: 0.4s ease;
+
+  &--active {
+    position: relative;
+    color: $foreground;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #d10a42;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $foreground;
+  }
+}
+
+.membership__options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
