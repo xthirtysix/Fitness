@@ -1,0 +1,122 @@
+.advantages {
+  padding: 120px 0;
+  background-color: $background-light;
+}
+
+.advantages__header {
+  text-align: center;
+}
+
+.advantages__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  box-sizing: content-box;
+  display: block;
+  width: 40%;
+  max-width: 340px;
+  margin: 0 60px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0;
+  color: $foreground;
+
+  &--blue {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 23%;
+    max-width: 240px;
+    height: 100%;
+    margin: 0;
+    line-height: 150%;
+    text-align: center;
+    color: $foreground-light;
+    background-color: $accent-blue;
+
+    .advantages__card {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 0 34px;
+    }
+
+    .advantages__number-description {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 150%;
+      color: $foreground-light;
+    }
+  }
+
+  &:first-child,
+  &:nth-child(3n+1) {
+    .advantages__card {
+      justify-content: flex-start;
+    }
+  }
+
+  &:first-child,
+  &:nth-child(2) {
+    .advantages__card {
+      padding-top: 0;
+      padding-bottom: 65px;
+      border: none;
+    }
+  }
+}
+
+.advantages__card-wrapper {
+  &--text {
+    margin-left: 30px;
+  }
+}
+
+.advantages__card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding-top: 81px;
+  border-top: 2px solid rgba(209, 10, 66, 0.2);
+}
+
+.advantages__item-header {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.advantages__description {
+  width: auto;
+  word-wrap: break-word;
+}
+
+.advantages__number {
+  display: block;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 150%;
+}
+
+.advantages__number-description {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2e35ac;
+}

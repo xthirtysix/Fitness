@@ -1,0 +1,47 @@
+.feedback {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.feedback__container {
+  width: 712px;
+}
+
+.feedback__header {
+  text-align: center;
+}
+
+.feedback__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: $accent-blue;
+}
+
+.feedback__card {
+  position: relative;
+  box-sizing: border-box;
+  padding: 62px;
+  padding-left: 170px;
+  padding-bottom: 46px;
+  color: $foreground-light;
+}
+
+.feedback__picture {
+  position: absolute;
+  top: 62px;
+  left: 62px;
+}
+
+.feedback__name {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.feedback__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}

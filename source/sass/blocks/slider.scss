@@ -1,0 +1,60 @@
+.slider {
+  position: relative;
+  box-sizing: border-box;
+  width: auto;
+  max-width: 1272px;
+  margin: auto;
+  padding: 0 56px;
+}
+
+.slider__buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__button {
+  position: relative;
+  width: 16px;
+  height: 32px;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 32px;
+    background-size: 16px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/arrow.svg");
+  }
+
+  &--forward {
+    &::before {
+      right: 0;
+      transform: scaleX(-1);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.4;
+  }
+}

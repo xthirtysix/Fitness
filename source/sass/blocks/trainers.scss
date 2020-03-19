@@ -1,0 +1,13 @@
+.trainers {
+  position: relative;
+  padding: 60px 0 120px;
+}
+
+.trainers__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

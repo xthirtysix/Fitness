@@ -1,0 +1,84 @@
+.header {
+  font-family: $bebas;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $foreground-light;
+
+  background: radial-gradient(33.97% 69.22% at 16.03% 39.06%, #003d85 99.48%, #b80027 99.03%);
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.header__navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__phone {
+  margin-left: auto;
+  font-family: $bebas;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $foreground-light;
+}
+
+.header__wrapper {
+  max-width: 377px;
+  margin-right: 64px;
+}
+
+.header__main-title {
+  font-family: $bebas;
+  font-weight: 700;
+  font-size: 109px;
+  line-height: 109px;
+  letter-spacing: 0.03em;
+}
+
+.header__town {
+  font-family: $bebas;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+.header__services {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: none;
+}
+
+.header__social-list {
+  align-self: flex-end;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.header__social-link {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $foreground-light;
+}

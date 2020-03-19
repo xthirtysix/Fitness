@@ -1,0 +1,100 @@
+.anounce {
+  padding: 120px 0 60px;
+  background-color: $background;
+}
+
+.anounce__container {
+  padding-left: 0;
+  color: $foreground-light;
+  background-color: #000145;
+
+  background-image: url("../img/event.jpg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 660px 500px;
+}
+
+.anounce__wrapper {
+  box-sizing: border-box;
+  width: 500px;
+  padding: 87px 78px;
+  position: relative;
+  background-color: $accent-red;
+}
+
+.anounce__header {
+  max-width: 205px;
+  margin: 0;
+  margin-bottom: 28px;
+  font-family: $bebas;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+}
+
+.anounce__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.anounce__button {
+  width: 343px;
+  padding: 29px 0;
+}
+
+.anounce__date-container {
+  position: absolute;
+  top: 87px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.anounce__date,
+.anounce__time {
+  display: block;
+  margin: 0;
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.anounce__date-wrapper {
+  position: relative;
+  top: -10px;
+  min-width: 64px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $background;
+  }
+}
+
+.anounce__month,
+.anounce__year {
+  position: absolute;
+  left: 27px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.anounce__month {
+  top: 10px;
+}
+
+.anounce__year {
+  bottom: 10px;
+}
