@@ -4,9 +4,32 @@
   width: 31%;
   padding: 7px;
   background-color: $background;
+  transition: 0.4s ease;
+  outline: none;
 
+  &:hover,
+  &:focus,
   &--active {
     background: linear-gradient(to right bottom, #d10a42, #00359f);
+
+    .membership-card__price {
+      transform: translateY(-5px);
+
+      &::before {
+        transform: translate(-50%, 2px);
+      }
+    }
+
+    .membership-card__link {
+      color: $foreground-light;
+      background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+
+      &:hover,
+      &:focus {
+        color: $foreground-light;
+        background: linear-gradient(111.72deg, #ed0233 1.6%, #003eb7 85.31%);
+      }
+    }
   }
 }
 
@@ -16,12 +39,13 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 68px 20px;
+  padding: 56px 20px 59px;
   background-color: $background;
 }
 
 .membership-card__header {
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-family: $roboto;
   font-weight: 700;
   font-size: 26px;
@@ -29,7 +53,7 @@
 }
 
 .membership-card__description {
-  margin-bottom: 92px;
+  margin-bottom: 65px;
   font-family: $roboto;
   font-weight: 400;
   font-size: 16px;
@@ -42,20 +66,20 @@
   z-index: 1;
   position: relative;
   display: block;
-  margin-bottom: 44px;
+  margin-bottom: 34px;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
   line-height: 150%;
-
   color: #103aae;
+  transition: 0.4s ease;
 
   &::before {
     position: absolute;
     z-index: -1;
     left: 50%;
-    bottom: -10px;
-    transform: translateX(-50%);
+    bottom: -7px;
+    transform: translate(-50%, 0);
     font-family: $roboto;
     font-weight: bold;
     font-size: 100px;
@@ -73,7 +97,6 @@
   &--1700 {
     &::before {
       content: "1700";
-      bottom: -15px;
     }
   }
 
@@ -86,14 +109,14 @@
 
 .membership-card__link {
   width: 206px;
-  padding: 27px;
+  padding: 24px;
   color: $foreground;
   border: 2px solid $accent-blue;
 
   &:hover,
   &:focus {
     color: $foreground-light;
-    background-color: $accent-blue;
+    background: linear-gradient(111.72deg, #ed0233 1.6%, #003eb7 85.31%);
   }
 
   &:active {
