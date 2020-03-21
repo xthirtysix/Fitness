@@ -1,8 +1,7 @@
 .free-training {
-  padding-top: 67px;
-  width: 50%;
-  max-width: 480px;
+  min-width: 480px;
   margin-right: auto;
+  padding-top: 67px;
 }
 
 .free-training__header {
@@ -50,4 +49,46 @@ input[type="tel"] {
   padding: 17px;
   font-size: 14px;
   line-height: 16px;
+}
+
+
+@media (max-width: $tablet) {
+  .free-training {
+    position: relative;
+    width: 100%;
+    max-width: 506px;
+    margin: 0 auto;
+    padding-top: 69px;
+    padding-bottom: 67px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: -100%;
+      width: 1000%;
+      height: 100%;
+      background-color: $accent-blue;
+      z-index: -1;
+    }
+  }
+
+  .free-training__header {
+    margin-left: 2px;
+    margin-bottom: 33px;
+  }
+
+  .free-training__form {
+    max-width: unset;
+    margin-right: 30px;
+  }
+
+  .free-training__container {
+    max-width: 206px;
+  }
+
+  .free-training__button {
+    padding-bottom: 16px;
+  }
 }

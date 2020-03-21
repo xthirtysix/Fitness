@@ -8,4 +8,9 @@
   &--inversed {
     color: $foreground-light;
   }
+
+  @media (max-width: $tablet) {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }

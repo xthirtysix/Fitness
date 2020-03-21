@@ -12,6 +12,10 @@
   background-size: 280px 462px;
   background-repeat: no-repeat;
   overflow: hidden;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/offer@2x.png");
+  }
 }
 
 .promo-offer__header {
@@ -45,5 +49,19 @@
 
   &::after {
     background-color: $background;
+  }
+}
+
+@media (max-width: $tablet) {
+  .promo-offer {
+    min-width: 100%;
+    margin-bottom: 0;
+    padding-right: 440px;
+    background-image: url("../img/offer-tablet.jpg");
+    background-size: 399px 462px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/offer-tablet@2x.png");
+    }
   }
 }

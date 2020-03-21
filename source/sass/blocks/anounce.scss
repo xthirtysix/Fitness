@@ -10,6 +10,10 @@
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 660px 500px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/event@2x.jpg");
+  }
 }
 
 .anounce__wrapper {
@@ -98,4 +102,78 @@
 
 .anounce__year {
   bottom: 10px;
+}
+
+@media (max-width: $tablet) {
+  .anounce {
+    padding-top: 100px;
+  }
+
+  .anounce__container {
+    background-size: 386px 292px;
+  }
+
+  .anounce__wrapper {
+    width: 292px;
+    padding: 49px 45px 50px;
+  }
+
+  .anounce__header {
+    margin-bottom: 0;
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .anounce__description {
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+
+  .anounce__button {
+    width: 204px;
+    margin-left: -1px;
+    padding: 13px 0 12px;
+    font-size: 10px;
+    line-height: 12px;
+    border-width: 2px;
+  }
+
+  .anounce__date-container {
+    top: 47px;
+    right: 46px;
+  }
+
+  .anounce__date-wrapper {
+    min-width: 42px;
+    margin-bottom: -10px;
+    font-size: 24px;
+
+    &::before {
+      top: 2px;
+    }
+  }
+
+  .anounce__date,
+  .anounce__time {
+    font-size: 12px;
+  }
+
+  .anounce__month,
+  .anounce__year {
+    left: 16px;
+    font-size: 10px;
+  }
+
+  .anounce__month {
+    top: 4px;
+  }
+
+  .anounce__year {
+    bottom: 5px;
+  }
+
+  .anounce__hour {
+    display: block;
+    margin-top: -1px;
+  }
 }

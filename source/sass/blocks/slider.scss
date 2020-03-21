@@ -59,3 +59,15 @@
     opacity: 0.4;
   }
 }
+
+@media (max-width: $tablet) {
+  .slider__buttons {
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 858px;
+    box-sizing: border-box;
+    padding: 0 45px;
+    margin: auto;
+  }
+}

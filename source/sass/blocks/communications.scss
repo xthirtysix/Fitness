@@ -1,4 +1,5 @@
 .communications {
+  overflow: hidden;
   padding-bottom: 64px;
   border-top: 1px solid #74819c;
   background: linear-gradient(90deg, rgba(9, 9, 121, 1) 50%, rgba(255, 255, 255, 1) 50%);
@@ -8,4 +9,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+@media (max-width: $tablet) {
+  .communications {
+    padding-bottom: 0;
+    background: none;
+    border-top: none;
+  }
+
+  .communications__container {
+    flex-direction: column;
+  }
 }

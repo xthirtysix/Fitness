@@ -16,3 +16,21 @@
   padding: 0;
   list-style: none;
 }
+
+@media (max-width: $tablet) {
+  .trainers {
+    padding: 39px 0 100px;
+  }
+
+  .trainers__header {
+    margin-left: 0;
+    margin-bottom: 41px;
+    text-align: center;
+  }
+
+  .trainers__list {
+    max-width: 678px;
+    margin: auto;
+    padding: 0 45px;
+  }
+}
