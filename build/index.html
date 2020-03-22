@@ -28,8 +28,8 @@
     <div class="container header__container">
       <nav class="header__navigation">
         <a class="logo header__logo" tabindex="0" aria-label="Логотип Фитнесс Центра Supergym">
-          <svg width="89" height="20" role="img">
-            <use xlink:href="#logo" width="89" height="20"></use>
+          <svg role="img">
+            <use xlink:href="#logo"></use>
           </svg>
         </a>
         <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
@@ -44,7 +44,13 @@
           <li class="header__services-item">Кардио зона</li>
         </ul>
       </div>
-      <img class="header__promo-image" src="img/superman.jpg" width="500" height="556" alt="Супермен">
+      <figure class="header__promo-image">
+        <picture>
+          <source media="(max-width: 1199px)" srcset="img/superman-tablet.jpg 1x, img/superman-tablet@2x.jpg 2x">
+          
+          <img src="img/superman.jpg" srcset="img/superman@2x.jpg 2x," width="500" height="556" alt="Супермен">
+        </picture>
+      </figure>
       <ul class="header__social-list">
         <li class="header__social-item">
           <a href="https://facebook.com" class="header__social-link" aria-label="Переход на Facebook">
@@ -75,15 +81,21 @@
             Тренажерный
             зал оснащен всем необходимым современным оборудованием для всех спортсменов.
           </p>
-          <p class="gym__text">
+          <p class="gym__text gym__text--tablet-hidden">
             В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
             несколько оборудованных залов для различных видов групповых занятий.
           </p>
         </div>
-        <img class="gym__promo-image" src="img/gym.jpg" width="660" height="401" alt="Тренажёрный зал">
+        <p class="gym__promo-image">
+          <picture>
+            <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
+            <img src="img/gym.jpg" srcset="img/gym.jpg 1x, img/gym@2x.jpg 2x" width="660" height="401" alt="Тренажёрный зал">
+          </picture>
+        </p>
         <div class="gym__video-container">
           <div class="gym__video-overlay">
-            <button class="play-button" tabindex="0"><span class="visually-hidden">Воспроизвести видео</span></button>
+            <button class="play-button gym__play-button" tabindex="0"><span class="visually-hidden">Воспроизвести
+                видео</span></button>
           </div>
         </div>
       </div>
@@ -160,7 +172,9 @@
       <div class="slider">
         <ul class="trainers__list">
           <li class="trainer-card" tabindex="0">
-            <img src="img/trainer-1.jpg" alt="Анна Павлова" class="trainer-card__img">
+            <picture>
+              <img src="img/trainer-1.jpg" srcset="img/trainer-1jpg 1x,img/trainer-1@2x.jpg 2x" alt="Анна Павлова" class="trainer-card__img">
+            </picture>
             <div class="trainer-card__overlay">
               <h3 class="trainer-card__name">Анна Павлова</h3>
               <span class="trainer-card__specialization">CrossFit</span>
@@ -172,7 +186,10 @@
             </div>
           </li>
           <li class="trainer-card" tabindex="0">
-            <img src="img/trainer-2.jpg" alt="Алексей Лавров" class="trainer-card__img">
+            <picture>
+              <source media="(max-width: 1199px)" srcset="img/trainer-1-tablet.jpg 1x, img/trainer-1-tablet.jpg 2x">
+              <img src="img/trainer-2.jpg" srcset="img/trainer-2.jpg 1x, img/trainer-2@2x.jpg" alt="Алексей Лавров" class="trainer-card__img">
+            </picture>
             <div class="trainer-card__overlay">
               <h3 class="trainer-card__name">Алексей Лавров</h3>
               <span class="trainer-card__specialization">CrossFit</span>
@@ -184,7 +201,10 @@
             </div>
           </li>
           <li class="trainer-card" tabindex="0">
-            <img src="img/trainer-3.jpg" alt="Александр Пашков" class="trainer-card__img">
+            <picture>
+              <source media="(max-width: 1199px)" srcset="img/trainer-1-tablet.jpg 1x, img/trainer-1-tablet.jpg 2x">
+              <img src="img/trainer-3.jpg" srcset="img/trainer-3.jpg 1x, img/trainer-3@2x.jpg 2x" alt="Александр Пашков" class="trainer-card__img">
+            </picture>
             <div class="trainer-card__overlay">
               <h3 class="trainer-card__name">Александр Пашков</h3>
               <span class="trainer-card__specialization">CrossFit</span>
@@ -196,7 +216,10 @@
             </div>
           </li>
           <li class="trainer-card" tabindex="0">
-            <img src="img/trainer-4.jpg" alt="Мария Кетова" class="trainer-card__img">
+            <picture>
+              <source media="(max-width: 1199px)" srcset="img/trainer-2-tablet.jpg 1x, img/trainer-2-tablet.jpg 2x">
+              <img src="img/trainer-4.jpg" srcset="img/trainer-4.jpg 1x, img/trainer-4@2x.jpg" alt="Мария Кетова" class="trainer-card__img">
+            </picture>
             <div class="trainer-card__overlay">
               <h3 class="trainer-card__name">Мария Кетова</h3>
               <span class="trainer-card__specialization">CrossFit</span>
@@ -324,73 +347,57 @@
         <h2 class="section-header advantages__header">Наши преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <article class="advantages__card">
-              <div class="advantages__card-wrapper advantages__card-wrapper--text">
-                <h3 class="advantages__item-header">Площадь</h3>
-                <p class="advantages__description">Занимайтесь без очередей<br>и толпучки</p>
-              </div>
-              <div class="advantages__card-wrapper advantages__card-wrapper--image">
-                <svg width="108" height="49" role="img">
-                  <use xlink:href="#icon-900" width="108" height="49"></use>
-                </svg>
+            <article class="advantages__card advantages__card--900">
+              <h3 class="advantages__card-header">Площадь</h3>
+              <p class="advantages__number-description">
+                <img src="img/900.png" srcset="img/900.png 1x, img/900@2x.png 2x" width="102" height="53" alt="900">
                 <span class="visually-hidden">900</span>
-                <span class="advantages__number-description">кв/м</span>
-              </div>
+                <span class="advantages__number-item">кв/м</span>
+              </p>
+              <p class="advantages__text-description">Занимайтесь без очередей и толпучки
+              </p>
             </article>
           </li>
           <li class="advantages__item">
-            <article class="advantages__card">
-              <div class="advantages__card-wrapper advantages__card-wrapper--text">
-                <h3 class="advantages__item-header">Собственная парковка</h3>
-                <p class="advantages__description">Вы всегда найдете место для своей машины на нашей парковке</p>
-              </div>
-              <div class="advantages__card-wrapper advantages__card-wrapper--image">
-                <svg width="72" height="49" role="img">
-                  <use xlink:href="#icon-70" width="72" height="49"></use>
-                </svg>
+            <article class="advantages__card advantages__card--70">
+              <h3 class="advantages__card-header">Собственная парковка</h3>
+              <p class="advantages__number-description">
+                <img src="img/70.png" srcset="img/70.png 1x, img/70@2x.png 2x" width="67" height="53" alt="70">
                 <span class="visually-hidden">70</span>
-                <span class="advantages__number-description">машин</span>
-              </div>
+                <span class="advantages__number-item">машин</span>
+              </p>
+              <p class="advantages__text-description">Вы всегда найдете место для<br> своей машины на нашей парковке</p>
             </article>
           </li>
           <li class="advantages__item advantages__item--blue">
-            <article class="advantages__card">
-              <h3>
+            <article class="advantages__card advantages__card--blue">
+              <h3 class="advantages__card-header">
                 <span class="advantages__number">100</span>
-                <span class="advantages__number-description">Тренажеров</span>
+                <span class="advantages__number-item">Тренажеров</span>
               </h3>
-
-              <p class="advantages__description">Современные тренажеры на все группы мышц</p>
+              <p class="advantages__text-description">Современные тренажеры на все группы мышц</p>
             </article>
           </li>
           <li class="advantages__item">
-            <article class="advantages__card">
-              <div class="advantages__card-wrapper advantages__card-wrapper--text">
-                <h3 class="advantages__item-header">Комфорт</h3>
-                <p class="advantages__description">Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</p>
-              </div>
-              <div class="advantages__card-wrapper advantages__card-wrapper--image">
-                <svg width="108" height="49" role="img">
-                  <use xlink:href="#icon-350" width="108" height="49"></use>
-                </svg>
+            <article class="advantages__card advantages__card--350">
+              <h3 class="advantages__card-header">Комфорт</h3>
+              <p class="advantages__number-description">
+                <img src="img/350.png" srcset="img/350.png 1x, img/350@2x.png 2x" width="103" height="53" alt="350">
                 <span class="visually-hidden">350</span>
-                <span class="advantages__number-description">мест</span>
-              </div>
+                <span class="advantages__number-item">мест</span>
+              </p>
+              <p class="advantages__text-description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
             </article>
           </li>
           <li class="advantages__item">
-            <article class="advantages__card">
-              <div class="advantages__card-wrapper advantages__card-wrapper--text">
-                <h3 class="advantages__item-header">Тренерский опыт</h3>
-                <p class="advantages__description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
-              </div>
-              <div class="advantages__card-wrapper advantages__card-wrapper--image">
-                <svg width="70" height="49" role="img">
-                  <use xlink:href="#icon-5+" width="70" height="49"></use>
-                </svg>
-                <span class="visually-hidden">5+</span>
-                <span class="advantages__number-description">лет</span>
-              </div>
+            <article class="advantages__card advantages__card--5">
+              <h3 class="advantages__card-header">Тренерский опыт</h3>
+              <p class="advantages__number-description">
+                <img src="img/5+.png" srcset="img/5+.png 1x, img/5+@2x.png 2x" width="65" height="52" alt="5+">
+                <span class="visually-hidden">Более пяти</span>
+                <span class="advantages__number-item">лет</span>
+              </p>
+              <p class="advantages__text-description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
             </article>
           </li>
         </ul>
@@ -409,7 +416,7 @@
             <li class="offers__item">
               <article class="offers__card">
                 <h3 class="offers__card-header">Месяц бесплатно</h3>
-                <p class="offers__description">Приведи друга, получи абонемент в подарок</p>
+                <p class="offers__description offers__description--pr30">Приведи друга, получи абонемент в подарок</p>
                 <a href="" class="offers__link">Подробнее</a>
               </article>
             </li>
@@ -502,16 +509,16 @@
           </ul>
         </section>
       </div>
-      
-  </div></main>
+    </div>
+  </main>
   <footer class="footer">
     <div class="container">
       <nav class="footer__navigation">
         <ul class="footer__navigation-list">
           <li class="footer__navigation-item footer__navigation-item--logo">
             <a class="logo footer__logo" tabindex="0" aria-label="Логотип Фитнесс Центра Supergym">
-              <svg width="89" height="20" role="img">
-                <use xlink:href="#logo" width="89" height="20"></use>
+              <svg role="img">
+                <use xlink:href="#logo"></use>
               </svg>
             </a>
           </li>

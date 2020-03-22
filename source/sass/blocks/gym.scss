@@ -7,6 +7,7 @@
 .gym__container {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .gym__wrapper {
@@ -36,6 +37,16 @@
 
 .gym__promo-image {
   background-color: #ccccba;
+  width: 660px;
+  height: 401px;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .gym__video-container {
@@ -48,8 +59,7 @@
   background-color: rgba(20, 54, 122, 0.5);
 
 
-  @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/video-fallback@2x.jpg");
   }
 }
@@ -59,4 +69,66 @@
   width: 100%;
   height: 100%;
   background-color: rgba(20, 54, 122, 0.5);
+}
+
+
+@media (max-width: $tablet) {
+  .gym {
+    padding-top: 99px;
+    padding-bottom: 183px;
+  }
+
+  .gym__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gym__wrapper {
+    max-width: unset;
+    margin: 0 78px;
+    margin-bottom: 34px;
+  }
+
+  .gym__header,
+  .gym__description,
+  .gym__text {
+    text-align: center;
+  }
+
+  .gym__header {
+    margin-top: 0;
+    margin-bottom: 9px;
+  }
+
+  .gym__description {
+    margin-bottom: 35px;
+  }
+
+  .gym__text {
+    &--tablet-hidden {
+      display: none;
+    }
+  }
+
+  .gym__promo-image {
+    width: 678px;
+    height: auto;
+  }
+
+  .gym__video-container {
+    top: unset;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    width: 266px;
+    height: 167px;
+  }
+
+  .gym__play-button {
+    &::after {
+      width: 73px;
+      height: 73px;
+      background-size: 73px;
+    }
+  }
 }

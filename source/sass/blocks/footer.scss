@@ -6,7 +6,6 @@
 .footer__navigation-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -29,6 +28,16 @@
   &:last-child {
     margin-right: 0;
     margin-left: auto;
+  }
+}
+
+.footer__logo {
+  width: 89px;
+  height: 20px;
+
+  svg {
+    width: 89px;
+    height: 20px;
   }
 }
 
@@ -84,5 +93,49 @@
   &:hover,
   &:focus {
     opacity: 0.7;
+  }
+}
+
+
+@media (max-width: $tablet) {
+  .footer {
+    padding: 41px 0;
+  }
+
+  .footer__logo {
+    width: 82px;
+    height: 18px;
+    margin-right: 20px;
+
+    svg {
+      width: 82px;
+      height: 18px;
+    }
+  }
+
+  .footer__navigation-item {
+    margin-right: 30px;
+
+    &--logo {
+      width: 82px;
+      margin-top: 6px;
+      margin-right: auto;
+    }
+
+    &:nth-last-child(2) {
+      margin-right: -20px;
+    }
+  }
+
+  .footer__social-list {
+    width: 100px;
+  }
+
+  .footer__social-item {
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
