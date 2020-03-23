@@ -8,9 +8,19 @@
   &--inversed {
     color: $foreground-light;
   }
+}
 
-  @media (max-width: $tablet) {
+@media (max-width: $tablet) {
+  .section-header {
     font-size: 42px;
     line-height: 42px;
+  }
+}
+
+
+@media (max-width: $mobile) {
+  .section-header {
+    font-size: 32px;
+    line-height: 32px;
   }
 }

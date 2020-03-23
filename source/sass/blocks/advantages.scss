@@ -331,14 +331,127 @@
     .advantages__card-header {
       font-size: 20px;
     }
-
-    .advantages__text-description {
-      margin-top: 2px;
-    }
   }
 
   .advantages__number-description {
     margin-top: 8px;
     padding-top: 42px;
+  }
+
+  .advantages__text-description {
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .advantages {
+    padding-top: 71px;
+    padding-bottom: 39px;
+  }
+
+  .advantages__container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .advantages__header {
+    margin-bottom: 31px;
+  }
+
+  .advantages__list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .advantages__item {
+    width: 100%;
+    margin-bottom: 15px;
+
+    &:nth-child(odd),
+    &:nth-child(even) {
+      .advantages__card {
+        padding: 10px 0;
+
+        &--blue {
+          padding-bottom: 30px;
+        }
+      }
+
+      .advantages__number-description {
+        padding: 0;
+      }
+
+      .advantages__text-description {
+        padding: 0;
+        text-align: center;
+      }
+    }
+
+    &--blue {
+      margin-top: 19px;
+      margin-bottom: 29px;
+    }
+  }
+
+  .advantages__card {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+
+    &--blue {
+      width: 100%;
+
+      .advantages__card-header {
+        margin-top: 10px;
+      }
+
+      .advantages__text-description {
+        margin-top: -2px;
+        margin-bottom: 12px;
+      }
+
+      .advantages__number-item {
+        margin-top: -24px;
+      }
+    }
+
+    img {
+      padding-left: 0;
+    }
+
+    &--900,
+    &--350,
+    &--blue {
+      .advantages__text-description {
+        max-width: 185px;
+      }
+    }
+
+    &--5 {
+      .advantages__text-description {
+        max-width: 230px;
+      }
+    }
+  }
+
+  .advantages__number-description {
+    position: static;
+    order: 1;
+    margin-bottom: 7px;
+  }
+
+  .advantages__number-item {
+    text-align: center;
+  }
+
+  .advantages__card-header {
+    order: 2;
+  }
+
+  .advantages__text-description {
+    box-sizing: content-box;
+    order: 3;
+    margin-top: 1px;
   }
 }

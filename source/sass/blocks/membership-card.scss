@@ -136,3 +136,38 @@
     padding-bottom: 60px;
   }
 }
+
+@media (max-width: $mobile) {
+  .membership-card {
+    margin-bottom: 35px;
+  }
+
+  .membership-card__wrapper {
+    padding: 43px 34px 49px;
+  }
+
+  .membership-card__header {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .membership-card__description {
+    margin-bottom: 53px;
+  }
+
+  .membership-card__price {
+    margin-bottom: 30px;
+    font-size: 48px;
+
+    &::before {
+      bottom: -3px;
+      font-size: 80px;
+      line-height: 150%;
+      opacity: 0.48;
+    }
+  }
+
+  .membership-card__link {
+    width: 100%;
+  }
+}

@@ -13,8 +13,9 @@
   background-repeat: no-repeat;
   overflow: hidden;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/offer@2x.png");
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/offer@2x.jpg");
   }
 }
 
@@ -60,8 +61,42 @@
     background-image: url("../img/offer-tablet.jpg");
     background-size: 399px 462px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background-image: url("../img/offer-tablet@2x.png");
     }
+  }
+}
+
+@media (max-width: $mobile) {
+  .promo-offer {
+    align-items: center;
+    width: 100%;
+    min-height: 0;
+    padding: 6px 45px calc(97% + 62px);
+    margin-bottom: 31px;
+    background-image: url("../img/offer-mobile.jpg");
+    background-size: contain;
+    background-position: center bottom;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/offer-mobile@2x.jpg");
+    }
+  }
+
+  .promo-offer__header,
+  .promo-offer__description {
+    text-align: center;
+  }
+
+  .promo-offer__description {
+    margin-top: -30px;
+    margin-bottom: 31px;
+  }
+
+  .promo-offer__link {
+    align-self: center;
+    margin-top: 0;
   }
 }

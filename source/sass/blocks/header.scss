@@ -205,3 +205,51 @@
     display: none;
   }
 }
+
+@media (max-width: $tablet) {
+  .header__navigation {
+    padding: 20px 0;
+  }
+
+  .header__logo {
+    width: 68px;
+    height: 15px;
+  }
+
+  .header__phone {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  .header__wrapper {
+    margin: 0;
+  }
+
+  .header__town {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .header__main-title {
+    font-size: 78px;
+    line-height: 78px;
+  }
+
+  .header__button {
+    width: 100%;
+    margin-left: -1px;
+  }
+
+  .header__services {
+    top: 233px;
+    left: unset;
+    right: 193px;
+  }
+
+  .header__promo-image {
+    display: none;
+  }
+}
