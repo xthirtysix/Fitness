@@ -59,7 +59,8 @@
   background-color: rgba(20, 54, 122, 0.5);
 
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     background-image: url("../img/video-fallback@2x.jpg");
   }
 }
@@ -130,5 +131,75 @@
       height: 73px;
       background-size: 73px;
     }
+  }
+}
+
+@media (max-width: $mobile) {
+  .gym {
+    padding-top: 67px;
+    padding-bottom: 70px;
+  }
+
+  .gym__container {
+    display: block;
+    padding: 0;
+  }
+
+  .gym__wrapper {
+    display: block;
+    margin: 0;
+    padding: 0 15px;
+  }
+
+  .gym__header,
+  .gym__description,
+  .gym__text {
+    text-align: left;
+  }
+
+  .gym__header {
+    margin-bottom: 6px;
+  }
+
+  .gym__description {
+    margin-bottom: 23px;
+  }
+
+  .gym__text {
+    margin-bottom: 35px;
+    padding-right: 30px;
+  }
+
+  .gym__promo-image {
+    width: 100%;
+    margin-bottom: 40px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .gym__video-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 0;
+    padding-top: 52.18%;
+    background-image: url("../img/video-fallback-mobile.jpg");
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-fallback-mobile@2x.jpg");
+    }
+  }
+
+  .gym__video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 }

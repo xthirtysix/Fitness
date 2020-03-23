@@ -92,3 +92,25 @@ input[type="tel"] {
     padding-bottom: 16px;
   }
 }
+
+@media (max-width: $mobile) {
+  .free-training {
+    min-width: 0;
+    margin: 0;
+    padding-bottom: 69px;
+  }
+
+  .free-training__form {
+    margin-right: 0;
+  }
+
+  .free-training__container {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 35px;
+  }
+
+  .free-training__button {
+    border-width: 3px;
+  }
+}

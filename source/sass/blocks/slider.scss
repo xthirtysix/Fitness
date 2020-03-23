@@ -71,3 +71,17 @@
     margin: auto;
   }
 }
+
+@media (max-width: $mobile) {
+  .slider {
+    padding: 0 47px;
+  }
+
+  .slider__buttons {
+    padding: 0 15px;
+  }
+
+  .slider__button {
+    transform: scale(0.7);
+  }
+}

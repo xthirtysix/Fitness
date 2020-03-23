@@ -88,6 +88,7 @@
         </div>
         <p class="gym__promo-image">
           <picture>
+            <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
             <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
             <img src="img/gym.jpg" srcset="img/gym.jpg 1x, img/gym@2x.jpg 2x" width="660" height="401" alt="Тренажёрный зал">
           </picture>
@@ -123,7 +124,7 @@
               <a href="#" class="membership-card__link button">Купить абонемент</a>
             </div>
           </li>
-          <li class="membership-card" tabindex="0">
+          <li class="membership-card membership-card--active tabindex=" 0"="">
             <div class="membership-card__wrapper">
               <h3 class="membership-card__header">Дневной</h3>
               <span class="membership-card__description">с 8:00 до 17:00</span>
@@ -173,7 +174,7 @@
         <ul class="trainers__list">
           <li class="trainer-card" tabindex="0">
             <picture>
-              <img src="img/trainer-1.jpg" srcset="img/trainer-1jpg 1x,img/trainer-1@2x.jpg 2x" alt="Анна Павлова" class="trainer-card__img">
+              <img src="img/trainer-1.jpg" srcset="img/trainer-1.jpg 1x,img/trainer-1@2x.jpg 2x" alt="Анна Павлова" class="trainer-card__img">
             </picture>
             <div class="trainer-card__overlay">
               <h3 class="trainer-card__name">Анна Павлова</h3>
@@ -202,6 +203,7 @@
           </li>
           <li class="trainer-card" tabindex="0">
             <picture>
+              <source media="(max-width: 767px)" srcset="img/trainer-1-mobile.jpg 1x, img/trainer-1-mobile@2x.jpg 2x">
               <source media="(max-width: 1199px)" srcset="img/trainer-1-tablet.jpg 1x, img/trainer-1-tablet.jpg 2x">
               <img src="img/trainer-3.jpg" srcset="img/trainer-3.jpg 1x, img/trainer-3@2x.jpg 2x" alt="Александр Пашков" class="trainer-card__img">
             </picture>
@@ -343,7 +345,7 @@
       
     </section>
     <section class="advantages">
-      <div class="container">
+      <div class="container advantages__container">
         <h2 class="section-header advantages__header">Наши преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -490,19 +492,19 @@
             Контакты
           </h2>
           <ul class="contacts__list">
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--adress">
               <h3 class="contacts__item-header">Адрес:</h3>
               <p class="contacts__description">г. Омск, ул. 60 лет Октября, 7</p>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--phone">
               <h3 class="contacts__item-header">Телефон:</h3>
               <a href="tel:+78005555555" class="contacts__description contacts__link">8-800-555-55-55</a>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--schedule">
               <h3 class="contacts__item-header">График работы:</h3>
               <p class="contacts__description">Пн-Вс: с 8:00 до 22:00</p>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--email">
               <h3 class="contacts__item-header">Email:</h3>
               <a href="mailto:omsk@supergym.ru" class="contacts__description contacts__link">omsk@supergym.ru</a>
             </li>
@@ -522,31 +524,31 @@
               </svg>
             </a>
           </li>
-          <li class="footer__navigation-item"><a href="#" class="footer__navigation-link">Услуги</a></li>
-          <li class="footer__navigation-item"><a href="#" class="footer__navigation-link">Абонементы</a></li>
-          <li class="footer__navigation-item"><a href="#" class="footer__navigation-link">Акции</a></li>
-          <li class="footer__navigation-item"><a href="#" class="footer__navigation-link">Тренеры</a></li>
-          <li class="footer__navigation-item"><a href="#" class="footer__navigation-link">Расписание</a></li>
+          <li class="footer__navigation-item footer__navigation-item--sale"><a href="#" class="footer__navigation-link footer__navigation-link">Акции</a></li>
+          <li class="footer__navigation-item footer__navigation-item--services"><a href="#" class="footer__navigation-link footer__navigation-link">Услуги</a></li>
+          <li class="footer__navigation-item footer__navigation-item--trainers"><a href="#" class="footer__navigation-link footer__navigation-link">Тренеры</a></li>
+          <li class="footer__navigation-item footer__navigation-item--membership"><a href="#" class="footer__navigation-link footer__navigation-link">Абонементы</a></li>
+          <li class="footer__navigation-item footer__navigation-item--schedule"><a href="#" class="footer__navigation-link footer__navigation-link">Расписание</a></li>
           <li class="footer__navigation-item footer__navigation-item--social">
             <ul class="footer__social-list">
               <li class="footer__social-item">
                 <a href="https://vk.com" class="footer__social-link footer__social-link--vk" aria-label="Переход во Вконтакте">
-                  <svg width="24" height="13" role="img">
-                    <use xlink:href="#icon-vk" width="24" height="13"></use>
+                  <svg role="img">
+                    <use xlink:href="#icon-vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
                 <a href="https://instagram.com" class="footer__social-link footer__social-link--insta" aria-label="Переход в Instagram">
-                  <svg width="24" height="24" role="img">
-                    <use xlink:href="#icon-instagram" width="24" height="24"></use>
+                  <svg role="img">
+                    <use xlink:href="#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
                 <a href="https://facebook.com" class="footer__social-link footer__social-link--fb" aria-label="Переход на Facebook">
-                  <svg width="12" height="24" role="img">
-                    <use xlink:href="#icon-facebook" width="12" height="24"></use>
+                  <svg role="img">
+                    <use xlink:href="#icon-facebook"></use>
                   </svg>
                 </a>
               </li>

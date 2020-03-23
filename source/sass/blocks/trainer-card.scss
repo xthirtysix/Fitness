@@ -137,3 +137,35 @@
     margin-left: -18px;
   }
 }
+
+@media (max-width: $mobile) {
+  .trainer-card {
+    display: none;
+    width: 100%;
+
+    // Временные стили
+    &:nth-child(4) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      .trainer-card__name {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .trainer-card__overlay {
+    padding-top: 24px;
+    padding-left: 34px;
+    padding-right: 33px;
+  }
+
+  .trainer-card__name {
+    margin-right: 0;
+  }
+
+  .trainer-card__specialization {
+    margin-left: 0;
+  }
+}

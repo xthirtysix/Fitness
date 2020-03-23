@@ -139,3 +139,98 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .footer {
+    padding: 49px 0 48px;
+  }
+
+  .footer__logo {
+    width: 68px;
+    height: 15px;
+
+    svg {
+      width: 68px;
+      height: 15px;
+    }
+  }
+
+  .footer__navigation-item {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0;
+    margin-bottom: 14px;
+
+    &:nth-child(even) {
+      padding-left: 15px;
+    }
+
+    &--logo {
+      order: 1;
+    }
+
+    &--sale {
+      margin-top: -5px;
+      order: 2;
+    }
+
+    &--services {
+      order: 3;
+    }
+
+    &--trainers {
+      order: 4;
+    }
+
+    &--membership {
+      order: 5;
+    }
+
+    &--schedule {
+      order: 6;
+    }
+
+    &--social {
+      order: 7;
+      width: 100%;
+    }
+  }
+
+  .footer__navigation-link {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footer__social-list {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .footer__social-item {
+    margin-right: 35px;
+    margin-left: 0;
+  }
+
+  .footer__social-link {
+    &--vk {
+      width: 32px;
+      height: 17px;
+    }
+
+    &--insta {
+      width: 27px;
+      height: 27px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 27px;
+    }
+
+    svg {
+      vertical-align: bottom;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
