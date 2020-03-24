@@ -120,6 +120,7 @@
 
 @media (max-width: $mobile) {
   .contacts {
+    min-width: 0;
     padding-bottom: 44px;
   }
 

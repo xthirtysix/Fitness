@@ -1,7 +1,10 @@
 @import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/swiper/scss/functions.scss";
+@import "../../node_modules/swiper/swiper.scss";
 @import "variables.scss";
 @import "fonts.scss";
 @import "base.scss";
+@import "slick-theme.scss";
 
 // Blocks
 @import "./blocks/container.scss";

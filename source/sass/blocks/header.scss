@@ -9,7 +9,6 @@
 }
 
 .header__container {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -54,6 +53,7 @@
 }
 
 .header__wrapper {
+  position: relative;
   max-width: 396px;
   margin-right: 64px;
   text-align: right;
@@ -72,7 +72,7 @@
 
 .header__town {
   display: block;
-  margin-top: 78px;
+  margin-top: 79px;
   margin-bottom: 13px;
   font-family: $bebas;
   font-weight: 400;
@@ -87,8 +87,8 @@
 
 .header__services {
   position: absolute;
-  top: 357px;
-  left: 40px;
+  top: 268px;
+  left: 19px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -190,8 +190,8 @@
   }
 
   .header__services {
-    top: 269px;
-    left: 45px;
+    top: 165px;
+    left: 0;
   }
 
   .header__promo-image {
@@ -206,7 +206,7 @@
   }
 }
 
-@media (max-width: $tablet) {
+@media (max-width: $mobile) {
   .header__navigation {
     padding: 20px 0;
   }
@@ -223,12 +223,12 @@
   }
 
   .header__wrapper {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .header__town {
-    margin-top: 50px;
-    margin-bottom: 15px;
+    margin-top: 52px;
+    margin-bottom: 13px;
     font-size: 28px;
     line-height: 28px;
   }
@@ -239,14 +239,13 @@
   }
 
   .header__button {
-    width: 100%;
+    width: 101%;
     margin-left: -1px;
   }
 
   .header__services {
-    top: 233px;
-    left: unset;
-    right: 193px;
+    top: 173px;
+    left: 0;
   }
 
   .header__promo-image {

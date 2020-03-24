@@ -57,6 +57,7 @@ input[type="tel"] {
     position: relative;
     width: 100%;
     max-width: 506px;
+    min-width: 0;
     margin: 0 auto;
     padding-top: 69px;
     padding-bottom: 67px;
@@ -80,7 +81,7 @@ input[type="tel"] {
   }
 
   .free-training__form {
-    max-width: unset;
+    max-width: 100%;
     margin-right: 30px;
   }
 
@@ -95,18 +96,19 @@ input[type="tel"] {
 
 @media (max-width: $mobile) {
   .free-training {
-    min-width: 0;
-    margin: 0;
+    min-width: 100px;
+    margin: 0 auto;
     padding-bottom: 69px;
   }
 
   .free-training__form {
+    min-width: 0;
     margin-right: 0;
   }
 
   .free-training__container {
     width: 100%;
-    max-width: none;
+    max-width: 100%;
     margin-bottom: 35px;
   }
 

@@ -122,20 +122,18 @@
 
   .offers__list {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: calc(100% + 30px);
-    max-width: unset;
+    width: 100%;
+    max-width: 100%;
     margin-top: 0;
-    margin-left: -30px;
   }
 
   .offers__item {
     box-sizing: border-box;
-    width: 45%;
+    flex-basis: 46%;
     min-width: 324px;
     margin-top: 30px;
-    margin-left: 30px;
   }
 
   .offers__description {
@@ -162,7 +160,7 @@
 
   .offers__item {
     width: 100%;
-    min-width: 0;
+    min-width: 100%;
     margin: 0;
     margin-bottom: 30px;
   }
