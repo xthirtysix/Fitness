@@ -4,8 +4,9 @@
 }
 
 .feedback__container {
-  width: 712px;
-  max-width: 848px;
+  position: relative;
+  width: 672px;
+  padding: 0 55px;
 }
 
 .feedback__header {
@@ -17,13 +18,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: $accent-blue;
 }
 
 .feedback__card {
   position: relative;
   box-sizing: border-box;
   padding: 54px 60px 42px 170px;
+  background-color: $accent-blue;
   color: $foreground-light;
 }
 
@@ -50,16 +51,11 @@
 
 @media (max-width: $tablet) {
   .feedback {
-    padding-top: 58px;
-    padding-bottom: 100px;
+    padding: 58px 45px 100px;
   }
 
   .feedback__container {
     width: 100%;
-
-    .slider__buttons {
-      padding: 0;
-    }
   }
 
   .feedback__header {
@@ -78,16 +74,13 @@
 
 @media (max-width: $mobile) {
   .feedback {
+    padding: 0;
     padding-top: 20px;
     padding-bottom: 70px;
   }
 
   .feedback__container {
-    padding: 0;
-
-    .slider__buttons {
-      padding: 0 12px;
-    }
+    padding: 0 47px;
   }
 
   .feedback__header {

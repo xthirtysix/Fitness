@@ -1,12 +1,3 @@
-.slider {
-  position: relative;
-  box-sizing: border-box;
-  width: auto;
-  max-width: 1272px;
-  margin: auto;
-  padding: 0 56px;
-}
-
 .slider__buttons {
   position: absolute;
   top: 50%;
@@ -16,9 +7,20 @@
   justify-content: space-between;
   width: 100%;
   height: 32px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+
+  &--trainers {
+    max-width: 1276px;
+    left: 50%;
+    transform: translate(-50%, 15%);
+  }
+
+  &--feedback {
+    left: 50%;
+    transform: translate(-50%, 100%);
+  }
 }
 
 .slider__button {
@@ -64,21 +66,34 @@
   .slider__buttons {
     z-index: 2;
     left: 50%;
-    transform: translate(-50%, -50%);
     max-width: 858px;
     box-sizing: border-box;
     padding: 0 45px;
     margin: auto;
+
+    &--trainers {
+      transform: translate(-50%, -20%);
+      min-width: 100%;
+    }
+
+    &--feedback {
+      transform: translate(-50%, 80%);
+      padding: 0;
+    }
   }
 }
 
 @media (max-width: $mobile) {
-  .slider {
-    padding: 0 47px;
-  }
-
   .slider__buttons {
-    padding: 0 15px;
+    padding: 0 12px;
+
+    &--trainers {
+      transform: translate(-50%, 25%);
+    }
+
+    &--feedback {
+      transform: translate(-50%, 60%);
+    }
   }
 
   .slider__button {

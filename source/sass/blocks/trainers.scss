@@ -8,10 +8,11 @@
   margin-bottom: 52px;
 }
 
+.trainers__container {
+  padding: 0 20px;
+}
+
 .trainers__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -22,16 +23,14 @@
     padding: 39px 0 100px;
   }
 
+  .trainers__container {
+    margin: 0 80px;
+  }
+
   .trainers__header {
     margin-left: 0;
     margin-bottom: 41px;
     text-align: center;
-  }
-
-  .trainers__list {
-    max-width: 678px;
-    margin: auto;
-    padding: 0 45px;
   }
 }
 
@@ -40,13 +39,15 @@
     padding-bottom: 70px;
   }
 
+  .trainers__container {
+    margin: 0 27px;
+  }
+
   .trainers__header {
     margin-bottom: 44px;
   }
 
   .trainers__list {
     width: 100%;
-    max-width: none;
-    padding: 0;
   }
 }
