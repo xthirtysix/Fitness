@@ -11,8 +11,7 @@
   background-repeat: no-repeat;
   background-size: 660px 500px;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/event@2x.jpg");
   }
 }
@@ -192,8 +191,7 @@
     background-position: center bottom;
     background-size: 100%;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/event-mobile@2x.jpg");
       background-position: center bottom;
     }

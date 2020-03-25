@@ -1,12 +1,17 @@
 .membership-card {
   z-index: 2;
   box-sizing: border-box;
-  width: 360px;
-  margin-left: 40px;
+  width: 31%;
+  margin-right: 3.5%;
+  margin-bottom: 20px;
   padding: 7px;
   background-color: $background;
   transition: 0.4s ease;
   outline: none;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
   &:hover,
   &:focus,
@@ -68,6 +73,7 @@
   position: relative;
   display: block;
   margin-bottom: 34px;
+  padding-right: 40px;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -89,6 +95,20 @@
     opacity: 0.47;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    display: block;
+    width: 30px;
+    height: 42px;
+    background-image: url("../img/icon-ruble.svg");
+    background-size: 30px 42px;
+    background-repeat: no-repeat;
+  }
+
   &--5000 {
     &::before {
       content: "5000";
@@ -98,6 +118,10 @@
   &--1700 {
     &::before {
       content: "1700";
+    }
+
+    &::after {
+      bottom: calc(50% - 5px);
     }
   }
 
@@ -132,6 +156,19 @@
     margin-bottom: 40px;
   }
 
+  .membership-card__price {
+    padding-right: 45px;
+
+    &--1700 {
+      margin-top: 4px;
+      margin-bottom: 30px;
+
+      &::after {
+        bottom: 50%;
+      }
+    }
+  }
+
   .membership-card__wrapper {
     padding-bottom: 60px;
   }
@@ -157,6 +194,7 @@
 
   .membership-card__price {
     margin-bottom: 30px;
+    padding-right: 36px;
     font-size: 48px;
 
     &::before {
@@ -164,6 +202,16 @@
       font-size: 80px;
       line-height: 150%;
       opacity: 0.48;
+    }
+
+    &::after {
+      width: 24px;
+      height: 33px;
+      background-size: 24px 33px;
+    }
+
+    &--1700 {
+      margin-bottom: 26px;
     }
   }
 
