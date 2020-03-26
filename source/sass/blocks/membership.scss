@@ -29,15 +29,25 @@
   text-align: center;
 }
 
-.membership__duration-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.membership__duration-wrapper {
   max-width: 341px;
   margin: 0 auto 37px;
+  overflow: hidden;
+}
+
+.membership__duration-list {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: -46px;
   padding: 0;
   list-style: none;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.membership__duration-item {
+  margin-left: 46px;
 }
 
 .membership__link {
@@ -107,9 +117,17 @@
     margin-bottom: 18px;
   }
 
-  .membership__duration-list {
+  .membership__duration-wrapper {
     max-width: 332px;
     margin-bottom: 44px;
+  }
+
+  .membership__duration-list {
+    margin-left: -54px;
+  }
+
+  .membership__duration-item {
+    margin-left: 54px;
   }
 
   .membership__link {
@@ -144,8 +162,17 @@
     }
   }
 
-  .membership__duration-list {
+  .membership__duration-wrapper {
+    max-width: 290px;
     margin-bottom: 34px;
+  }
+
+  .membership__duration-list {
+    margin-left: -45px;
+  }
+
+  .membership__duration-item {
+    margin-left: 45px;
   }
 
   .membership__header {
