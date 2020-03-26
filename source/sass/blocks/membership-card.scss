@@ -104,18 +104,18 @@
     display: block;
     width: 30px;
     height: 42px;
-    background-image: url("../img/icon-ruble.svg");
+    background-image: url("../img/ruble.svg");
     background-size: 30px 42px;
     background-repeat: no-repeat;
   }
 
-  &--5000 {
+  &--with-trainer {
     &::before {
       content: "5000";
     }
   }
 
-  &--1700 {
+  &--noontime {
     &::before {
       content: "1700";
     }
@@ -125,7 +125,7 @@
     }
   }
 
-  &--2700 {
+  &--fullday {
     &::before {
       content: "2700";
     }

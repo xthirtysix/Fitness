@@ -60,12 +60,23 @@
   top: 288px;
   width: 364px;
   height: 228px;
-  background-image: url("../img/video-fallback.jpg");
   background-color: rgba(20, 54, 122, 0.5);
   background-size: contain;
+}
+
+.no-webp .gym__video-container {
+  background-image: url("../img/video-fallback.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/video-fallback@2x.jpg");
+  }
+}
+
+.webp .gym__video-container {
+  background-image: url("../img/video-fallback.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-fallback@2x.webp");
   }
 }
 
@@ -210,12 +221,23 @@
     height: 0;
     margin: 0 auto;
     padding-top: 52.18%;
-    background-image: url("../img/video-fallback-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .no-webp .gym__video-container {
+    background-image: url("../img/video-fallback-mobile.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-fallback-mobile@2x.jpg");
+    }
+  }
+
+  .webp .gym__video-container {
+    background-image: url("../img/video-fallback-mobile.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-fallback-mobile@2x.webp");
     }
   }
 
