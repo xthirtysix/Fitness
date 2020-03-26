@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Стартовый шаблон</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="visually-hidden">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="header header--inner">
+    <div class="container header__container--inner">
+      <nav class="header__navigation">
+        <a href="index.html" class="logo header__logo" aria-label="Логотип Фитнесс Центра Supergym">
+          <svg role="img">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="schedule">
+      <div class="container schedule__container">
+        <h1 class="section-header schedule__header">Расписание</h1>
+        <table class="schedule__table">
+          <tr>
+            <th></th>
+            <th class="schedule__day">Понедельник</th>
+            <th class="schedule__day">Вторник</th>
+            <th class="schedule__day">Среда</th>
+            <th class="schedule__day">Четверг</th>
+            <th class="schedule__day">Пятница</th>
+            <th class="schedule__day">Суббота</th>
+            <th class="schedule__day">Воскресенье</th>
+          </tr>
+          <tr>
+            <td class="schedule__time">08:00</td>
+            <td class="schedule__training">CrossFit</td>
+            <td class="schedule__training">Aerostretching</td>
+            <td class="schedule__training">Hot Iron</td>
+            <td class="schedule__training">Pilates</td>
+            <td class="schedule__training">Stretching</td>
+            <td class="schedule__training">Functional</td>
+            <td class="schedule__training">Body Sculpt</td>
+          </tr>
+          <tr>
+            <td class="schedule__time">12:00</td>
+            <td class="schedule__training">Body Sculpt</td>
+            <td class="schedule__training">CrossFit</td>
+            <td class="schedule__training">Aerostretching</td>
+            <td class="schedule__training">Hot Iron</td>
+            <td class="schedule__training">Pilates</td>
+            <td class="schedule__training">Stretching</td>
+            <td class="schedule__training">Functional</td>
+          </tr>
+          <tr>
+            <td class="schedule__time">18:00</td>
+            <td class="schedule__training">Functional</td>
+            <td class="schedule__training">Body Sculpt</td>
+            <td class="schedule__training">CrossFit</td>
+            <td class="schedule__training">Aerostretching </td>
+            <td class="schedule__training">Hot Iron</td>
+            <td class="schedule__training">Pilates</td>
+            <td class="schedule__training">Stretching</td>
+          </tr>
+          <tr>
+            <td class="schedule__time">20:00</td>
+            <td class="schedule__training">Stretching</td>
+            <td class="schedule__training">Functional</td>
+            <td class="schedule__training">Body Sculpt</td>
+            <td class="schedule__training">CrossFit</td>
+            <td class="schedule__training">Aerostretching </td>
+            <td class="schedule__training">Hot Iron</td>
+            <td class="schedule__training">Pilates</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer class="footer footer--schedule">
+    <div class="container">
+      <nav class="footer__navigation">
+        <ul class="footer__navigation-list">
+          <li class="footer__navigation-item footer__navigation-item--logo">
+            <a class="logo footer__logo" tabindex="0" aria-label="Логотип Фитнесс Центра Supergym">
+              <svg role="img">
+                <use xlink:href="#logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__navigation-item footer__navigation-item--sale">
+            <a href="#" class="footer__navigation-link footer__navigation-link">Акции</a>
+          </li>
+          <li class="footer__navigation-item footer__navigation-item--services">
+            <a href="#" class="footer__navigation-link footer__navigation-link">Услуги</a>
+          </li>
+          <li class="footer__navigation-item footer__navigation-item--trainers">
+            <a href="#" class="footer__navigation-link footer__navigation-link">Тренеры</a>
+          </li>
+          <li class="footer__navigation-item footer__navigation-item--membership">
+            <a href="#" class="footer__navigation-link footer__navigation-link">Абонементы</a>
+          </li>
+          <li class="footer__navigation-item footer__navigation-item--schedule">
+            <a href="schedule.html" class="footer__navigation-link footer__navigation-link">Расписание</a>
+          </li>
+          <li class="footer__navigation-item footer__navigation-item--social">
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="https://vk.com" class="footer__social-link footer__social-link--vk"
+                  aria-label="Переход во Вконтакте">
+                  <svg role="img">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="https://instagram.com" class="footer__social-link footer__social-link--insta"
+                  aria-label="Переход в Instagram">
+                  <svg role="img">
+                    <use xlink:href="#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="https://facebook.com" class="footer__social-link footer__social-link--fb"
+                  aria-label="Переход на Facebook">
+                  <svg role="img">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>

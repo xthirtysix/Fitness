@@ -1,22 +1,33 @@
-.anounce {
+.announce {
   padding: 121px 0 60px;
   background-color: $background;
 }
 
-.anounce__container {
+.announce__container {
   color: $foreground-light;
   background-color: #000145;
-  background-image: url("../img/event.jpg");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 660px 500px;
+}
+
+.no-webp .announce__container {
+  background-image: url("../img/event.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/event@2x.jpg");
   }
 }
 
-.anounce__wrapper {
+.webp .announce__container {
+  background-image: url("../img/event.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/event@2x.jpg");
+  }
+}
+
+.announce__wrapper {
   position: relative;
   box-sizing: border-box;
   width: 500px;
@@ -24,7 +35,7 @@
   background-color: $accent-red;
 }
 
-.anounce__header {
+.announce__header {
   max-width: 205px;
   margin: 0;
   margin-bottom: 8px;
@@ -34,7 +45,7 @@
   letter-spacing: 0.03em;
 }
 
-.anounce__description {
+.announce__description {
   margin-top: 0;
   margin-bottom: 46px;
   font-weight: 400;
@@ -42,13 +53,13 @@
   line-height: 150%;
 }
 
-.anounce__button {
+.announce__button {
   width: 347px;
   margin-left: -2px;
   padding: 24px 0;
 }
 
-.anounce__date-container {
+.announce__date-container {
   position: absolute;
   top: 81px;
   right: 79px;
@@ -57,8 +68,8 @@
   align-items: flex-start;
 }
 
-.anounce__date,
-.anounce__time {
+.announce__date,
+.announce__time {
   display: block;
   margin: 0;
   margin-bottom: 9px;
@@ -67,7 +78,7 @@
   line-height: 150%;
 }
 
-.anounce__date-wrapper {
+.announce__date-wrapper {
   position: relative;
   top: -10px;
   min-width: 64px;
@@ -87,8 +98,8 @@
   }
 }
 
-.anounce__month,
-.anounce__year {
+.announce__month,
+.announce__year {
   position: absolute;
   left: 27px;
   font-weight: 400;
@@ -96,40 +107,40 @@
   line-height: 150%;
 }
 
-.anounce__month {
+.announce__month {
   top: 10px;
 }
 
-.anounce__year {
+.announce__year {
   bottom: 10px;
 }
 
 @media (max-width: $tablet) {
-  .anounce {
+  .announce {
     padding-top: 100px;
   }
 
-  .anounce__container {
+  .announce__container {
     background-size: 386px 292px;
   }
 
-  .anounce__wrapper {
+  .announce__wrapper {
     width: 292px;
     padding: 49px 45px 50px;
   }
 
-  .anounce__header {
+  .announce__header {
     margin-bottom: 0;
     font-size: 52px;
     line-height: 52px;
   }
 
-  .anounce__description {
+  .announce__description {
     margin-bottom: 30px;
     font-size: 12px;
   }
 
-  .anounce__button {
+  .announce__button {
     width: 204px;
     margin-left: -1px;
     padding: 13px 0 12px;
@@ -138,12 +149,12 @@
     border-width: 2px;
   }
 
-  .anounce__date-container {
+  .announce__date-container {
     top: 47px;
     right: 46px;
   }
 
-  .anounce__date-wrapper {
+  .announce__date-wrapper {
     min-width: 42px;
     margin-bottom: -10px;
     font-size: 24px;
@@ -153,51 +164,61 @@
     }
   }
 
-  .anounce__date,
-  .anounce__time {
+  .announce__date,
+  .announce__time {
     font-size: 12px;
   }
 
-  .anounce__month,
-  .anounce__year {
+  .announce__month,
+  .announce__year {
     left: 16px;
     font-size: 10px;
   }
 
-  .anounce__month {
+  .announce__month {
     top: 4px;
   }
 
-  .anounce__year {
+  .announce__year {
     bottom: 5px;
   }
 
-  .anounce__hour {
+  .announce__hour {
     display: block;
     margin-top: -1px;
   }
 }
 
 @media (max-width: $mobile) {
-  .anounce {
+  .announce {
     padding-top: 70px;
     padding-bottom: 30px;
   }
 
-  .anounce__container {
+  .announce__container {
     padding-bottom: 100%;
 
-    background-image: url("../img/event-mobile.jpg");
     background-position: center bottom;
     background-size: 100%;
+  }
+
+  .no-webp .announce__container {
+    background-image: url("../img/event.webp");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/event-mobile@2x.jpg");
-      background-position: center bottom;
+      background-image: url("../img/event@2x.jpg");
     }
   }
 
-  .anounce__wrapper {
+  .webp .announce__container {
+    background-image: url("../img/event-mobile.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/event-mobile@2x.jpg");
+    }
+  }
+
+  .announce__wrapper {
     width: 100%;
   }
 }

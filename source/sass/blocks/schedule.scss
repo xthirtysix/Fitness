@@ -1,0 +1,68 @@
+.schedule__header {
+  text-align: center;
+}
+
+.schedule__container {
+  overflow-x: auto;
+}
+
+.schedule__table {
+  width: 100%;
+  border-spacing: 8px;
+  table-layout: fixed;
+  white-space: nowrap;
+
+  th {
+    width: 48px;
+  }
+
+  .schedule__day {
+    box-sizing: border-box;
+    width: 148px;
+  }
+}
+
+.schedule__day,
+.schedule__time,
+.schedule__training {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #15367a;
+}
+
+.schedule__day,
+.schedule__time {
+  line-height: 0%;
+  border: 2px solid $accent-blue;
+
+  &--active {
+    color: $foreground-light;
+    border-color: $accent-red;
+    background-color: $accent-red;
+  }
+}
+
+.schedule__time {
+  min-width: 48px;
+}
+
+.schedule__day {
+  padding: 33px 5px;
+}
+
+.schedule__training {
+  box-sizing: border-box;
+  width: 148px;
+  padding: 30px 0;
+  line-height: 150%;
+  background-color: $background-light;
+  border: 2px solid $background-light;
+
+  &:hover,
+  &:focus {
+    color: $accent-red;
+    background-color: $background;
+    border-color: $accent-red;
+  }
+}

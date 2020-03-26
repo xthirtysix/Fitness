@@ -44,7 +44,6 @@
 
   &--social {
     order: 7;
-    padding-left: 25px;
     overflow: hidden;
   }
 
@@ -87,10 +86,10 @@
 
 .footer__social-list {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  width: 147px;
+  width: 138px;
   margin: 0;
-  margin-left: -25px;
   padding: 0;
   list-style: none;
 }
