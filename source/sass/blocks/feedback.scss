@@ -23,7 +23,7 @@
 .feedback__card {
   position: relative;
   box-sizing: border-box;
-  padding: 54px 60px 42px 170px;
+  padding: 54px 62px 42px 170px;
   background-color: $accent-blue;
   color: $foreground-light;
 }
@@ -63,6 +63,8 @@
   }
 
   .feedback__card {
+    max-width: 780px;
+    margin: 0 auto;
     padding-left: 173px;
     padding-right: 65px;
   }

@@ -9,7 +9,9 @@
 }
 
 .trainers__container {
-  padding: 0 20px;
+  position: relative;
+  max-width: 1274px;
+  padding: 0 57px;
 }
 
 .trainers__list {
@@ -24,7 +26,12 @@
   }
 
   .trainers__container {
-    margin: 0 80px;
+    margin: 0 45px;
+    padding: 0 55px;
+
+    img {
+      width: 100%;
+    }
   }
 
   .trainers__header {
@@ -40,7 +47,8 @@
   }
 
   .trainers__container {
-    margin: 0 27px;
+    margin: 0;
+    padding: 0 45px;
   }
 
   .trainers__header {

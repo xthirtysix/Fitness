@@ -1,6 +1,6 @@
 .membership {
   position: relative;
-  padding: 118px 0 120px;
+  padding: 118px 0 100px;
   background-color: $background-light;
 
   &::before {
@@ -15,8 +15,7 @@
     background-image: url("../img/rod-pancakes.png");
   }
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     &::before {
       width: 574px;
       height: 987px;
@@ -30,15 +29,25 @@
   text-align: center;
 }
 
-.membership__duration-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.membership__duration-wrapper {
   max-width: 341px;
   margin: 0 auto 37px;
+  overflow: hidden;
+}
+
+.membership__duration-list {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: -46px;
   padding: 0;
   list-style: none;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.membership__duration-item {
+  margin-left: 46px;
 }
 
 .membership__link {
@@ -80,7 +89,6 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0;
-  margin-left: -40px;
   padding: 0;
   list-style: none;
 }
@@ -95,10 +103,10 @@
       width: 347px;
       height: 444px;
       background-image: url("../img/rod-pancakes-tablet.png");
+      background-size: 347px 444px;
     }
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       &::before {
         background-image: url("../img/rod-pancakes-tablet@2x.png");
       }
@@ -109,9 +117,17 @@
     margin-bottom: 18px;
   }
 
-  .membership__duration-list {
+  .membership__duration-wrapper {
     max-width: 332px;
     margin-bottom: 44px;
+  }
+
+  .membership__duration-list {
+    margin-left: -54px;
+  }
+
+  .membership__duration-item {
+    margin-left: 54px;
   }
 
   .membership__link {
@@ -138,8 +154,7 @@
       background-image: none;
     }
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       &::before {
         display: none;
         background-image: none;
@@ -147,8 +162,17 @@
     }
   }
 
-  .membership__duration-list {
+  .membership__duration-wrapper {
+    max-width: 290px;
     margin-bottom: 34px;
+  }
+
+  .membership__duration-list {
+    margin-left: -45px;
+  }
+
+  .membership__duration-item {
+    margin-left: 45px;
   }
 
   .membership__header {

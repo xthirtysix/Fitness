@@ -16,9 +16,8 @@ body {
   background-color: $background;
 }
 
-.body-lock {
-  width: 100%;
-  position: fixed;
+main {
+  flex: 1 0 auto;
 }
 
 img {

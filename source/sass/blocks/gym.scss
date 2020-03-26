@@ -36,16 +36,21 @@
 }
 
 .gym__promo-image {
-  background-color: #ccccba;
+  position: relative;
   width: 660px;
   height: 401px;
   margin: 0;
   font-size: 0;
   line-height: 0;
+  background-color: #ccccba;
+  overflow: hidden;
 
   img {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: -37px;
+    left: 0;
+    width: 660px;
+    height: 437px;
   }
 }
 
@@ -57,10 +62,9 @@
   height: 228px;
   background-image: url("../img/video-fallback.jpg");
   background-color: rgba(20, 54, 122, 0.5);
+  background-size: contain;
 
-
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/video-fallback@2x.jpg");
   }
 }
@@ -113,7 +117,17 @@
 
   .gym__promo-image {
     width: 678px;
-    height: auto;
+    height: 345px;
+
+    img {
+      display: block;
+      top: -21px;
+      left: -95px;
+      right: 0;
+      max-width: none;
+      width: 114.1%;
+      height: 404px;
+    }
   }
 
   .gym__video-container {
@@ -162,7 +176,7 @@
   }
 
   .gym__description {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
 
   .gym__text {
@@ -172,11 +186,17 @@
 
   .gym__promo-image {
     width: 100%;
+    max-width: 450px;
+    height: 313px;
+    margin: 0 auto;
     margin-bottom: 40px;
 
     img {
-      width: 100%;
-      height: auto;
+      top: -2px;
+      left: auto;
+      right: -15px;
+      width: 470px;
+      height: calc(100% + 2px);
     }
   }
 
@@ -186,10 +206,13 @@
     left: 0;
     transform: none;
     width: 100%;
+    max-width: 450px;
     height: 0;
+    margin: 0 auto;
     padding-top: 52.18%;
     background-image: url("../img/video-fallback-mobile.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-fallback-mobile@2x.jpg");

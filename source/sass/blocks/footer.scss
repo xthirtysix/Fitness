@@ -1,5 +1,5 @@
 .footer {
-  padding: 38px 0;
+  padding: 33px 0 28px;
   background-color: $background-darker;
 }
 
@@ -16,10 +16,38 @@
   margin-right: 40px;
 
   &--logo {
+    order: 1;
     width: 135px;
     margin-top: 6px;
     margin-right: auto;
   }
+
+  &--sale {
+    order: 4;
+  }
+
+  &--services {
+    order: 2;
+  }
+
+  &--trainers {
+    order: 5;
+  }
+
+  &--membership {
+    order: 3;
+  }
+
+  &--schedule {
+    order: 6;
+  }
+
+  &--social {
+    order: 7;
+    padding-left: 25px;
+    overflow: hidden;
+  }
+
 
   &:nth-last-child(2) {
     margin-right: 0;
@@ -58,16 +86,18 @@
 }
 
 .footer__social-list {
-  width: 135px;
   display: flex;
   flex-wrap: wrap;
+  width: 147px;
   margin: 0;
+  margin-left: -25px;
   padding: 0;
   list-style: none;
 }
 
 .footer__social-item {
   margin-left: 25px;
+  padding: 10px 0;
 }
 
 .footer__social-link {
@@ -104,7 +134,7 @@
 
 @media (max-width: $tablet) {
   .footer {
-    padding: 41px 0;
+    padding: 34px 0;
   }
 
   .footer__logo {
@@ -147,7 +177,7 @@
 
 @media (max-width: $mobile) {
   .footer {
-    padding: 49px 0 48px;
+    padding: 49px 0 25px;
   }
 
   .footer__logo {
@@ -168,10 +198,6 @@
 
     &:nth-child(even) {
       padding-left: 15px;
-    }
-
-    &--logo {
-      order: 1;
     }
 
     &--sale {
@@ -196,7 +222,6 @@
     }
 
     &--social {
-      order: 7;
       width: 100%;
     }
   }
@@ -207,7 +232,7 @@
   }
 
   .footer__social-list {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
   }
 
@@ -218,6 +243,7 @@
 
   .footer__social-link {
     &--vk {
+      margin-top: 3px;
       width: 32px;
       height: 17px;
     }
@@ -230,10 +256,6 @@
     &--fb {
       width: 14px;
       height: 27px;
-    }
-
-    svg {
-      vertical-align: bottom;
     }
   }
 }
