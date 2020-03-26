@@ -84,6 +84,8 @@
   transition: 0.4s ease;
   outline: none;
 
+  &:focus,
+  &:hover,
   &--active {
     position: relative;
     color: $foreground;
@@ -125,11 +127,14 @@
       width: 347px;
       height: 444px;
       background-size: 347px 444px;
+      background-repeat: no-repeat;
     }
   }
 
   .no-webp .membership {
-    background-image: url("../img/rod-pancakes-tablet.png");
+    &::before {
+      background-image: url("../img/rod-pancakes-tablet.png");
+    }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       &::before {
@@ -139,7 +144,9 @@
   }
 
   .webp .membership {
-    background-image: url("../img/rod-pancakes-tablet.webp");
+    &::before {
+      background-image: url("../img/rod-pancakes-tablet.webp");
+    }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       &::before {

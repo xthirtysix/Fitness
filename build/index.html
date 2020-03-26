@@ -101,7 +101,7 @@
         <div class="membership__duration-wrapper">
           <ul class="membership__duration-list">
             <li class="membership__duration-item">
-              <a href="#" class="membership__link membership__link--1month membership__link--active">1 месяц</a>
+              <a href="#" class="membership__link membership__link--1month">1 месяц</a>
             </li>
             <li class="membership__duration-item">
               <a href="#" class="membership__link membership__link--6months">6 месяцев</a>
@@ -112,27 +112,33 @@
           </ul>
         </div>
         <ul class="membership__options">
-          <li class="membership-card" tabindex="0">
+          <li class="membership-card membership-card" tabindex="0">
             <div class="membership-card__wrapper">
               <h3 class="membership-card__header">С тренером</h3>
               <span class="membership-card__description">12 занятий</span>
-              <span class="membership-card__price membership-card__price--with-trainer">5000</span>
+              <span class="membership-card__price">5000
+                <span class="membership-card__background-price">5000</span>
+              </span>
               <a href="#" class="membership-card__link button">Купить абонемент</a>
             </div>
           </li>
-          <li class="membership-card" tabindex="0">
+          <li class="membership-card membership-card" tabindex="0">
             <div class="membership-card__wrapper">
               <h3 class="membership-card__header">Дневной</h3>
               <span class="membership-card__description">с 8:00 до 17:00</span>
-              <span class="membership-card__price membership-card__price--noontime">1700</span>
+              <span class="membership-card__price membership-card__price--Y-offset">1700
+                <span class="membership-card__background-price">1700</span>
+              </span>
               <a href="#" class="membership-card__link button">Купить абонемент</a>
             </div>
           </li>
-          <li class="membership-card" tabindex="0">
+          <li class="membership-card membership-card" tabindex="0">
             <div class="membership-card__wrapper">
               <h3 class="membership-card__header">Полный день</h3>
               <span class="membership-card__description">с 8:00 до 22:00</span>
-              <span class="membership-card__price membership-card__price--fullday">2700</span>
+              <span class="membership-card__price">2700
+                <span class="membership-card__background-price">2700</span>
+              </span>
               <a href="#" class="membership-card__link button">Купить абонемент</a>
             </div>
           </li>
@@ -724,6 +730,19 @@
       </nav>
     </div>
   </footer>
+
+  <template id="membership-card-template" style="display: none;">
+    <li class="membership-card" tabindex="0">
+      <div class="membership-card__wrapper">
+        <h3 class="membership-card__header">Абонемент</h3>
+        <span class="membership-card__description">12 занятий</span>
+        <span class="membership-card__price">5000
+          <span class="membership-card__background-price">5000</span>
+        </span>
+        <a href="#" class="membership-card__link button">Купить абонемент</a>
+      </div>
+    </li>
+  </template>
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

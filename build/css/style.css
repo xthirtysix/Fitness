@@ -1159,10 +1159,10 @@ img {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   outline: none; }
-  .membership__link--active {
+  .membership__link:focus, .membership__link:hover, .membership__link--active {
     position: relative;
     color: #102654; }
-    .membership__link--active::after {
+    .membership__link:focus::after, .membership__link:hover::after, .membership__link--active::after {
       content: "";
       position: absolute;
       bottom: -2px;
@@ -1195,19 +1195,22 @@ img {
       bottom: -125px;
       width: 347px;
       height: 444px;
-      background-size: 347px 444px; }
-  .no-webp .membership {
+      background-size: 347px 444px;
+      background-repeat: no-repeat; }
+  .no-webp .membership::before {
     background-image: url("../img/rod-pancakes-tablet.png"); } }
-  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-    .no-webp .membership::before {
-      background-image: url("../img/rod-pancakes-tablet@2x.png"); } }
+
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .no-webp .membership::before {
+    background-image: url("../img/rod-pancakes-tablet@2x.png"); } }
 
 @media (max-width: 1199px) {
-  .webp .membership {
+  .webp .membership::before {
     background-image: url("../img/rod-pancakes-tablet.webp"); } }
-  @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
-    .webp .membership::before {
-      background-image: url("../img/rod-pancakes-tablet@2x.webp"); } }
+
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 144dpi), (max-width: 1199px) and (min-resolution: 1.5dppx) {
+  .webp .membership::before {
+    background-image: url("../img/rod-pancakes-tablet@2x.webp"); } }
 
 @media (max-width: 1199px) {
   .membership__header {
@@ -1273,19 +1276,19 @@ img {
   outline: none; }
   .membership-card:nth-child(3n) {
     margin-right: 0; }
-  .membership-card:hover, .membership-card:focus, .membership-card--active {
+  .membership-card:hover, .membership-card:focus {
     background: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
     background: linear-gradient(to right bottom, #d10a42, #00359f); }
-    .membership-card:hover .membership-card__price, .membership-card:focus .membership-card__price, .membership-card--active .membership-card__price {
+    .membership-card:hover .membership-card__price, .membership-card:focus .membership-card__price {
       -webkit-transform: translateY(-5px);
               transform: translateY(-5px); }
-      .membership-card:hover .membership-card__price::before, .membership-card:focus .membership-card__price::before, .membership-card--active .membership-card__price::before {
+      .membership-card:hover .membership-card__price::before, .membership-card:focus .membership-card__price::before {
         -webkit-transform: translate(-50%, 2px);
                 transform: translate(-50%, 2px); }
-    .membership-card:hover .membership-card__link, .membership-card:focus .membership-card__link, .membership-card--active .membership-card__link {
+    .membership-card:hover .membership-card__link, .membership-card:focus .membership-card__link {
       color: #ffffff;
       background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%); }
-      .membership-card:hover .membership-card__link:hover, .membership-card:hover .membership-card__link:focus, .membership-card:focus .membership-card__link:hover, .membership-card:focus .membership-card__link:focus, .membership-card--active .membership-card__link:hover, .membership-card--active .membership-card__link:focus {
+      .membership-card:hover .membership-card__link:hover, .membership-card:hover .membership-card__link:focus, .membership-card:focus .membership-card__link:hover, .membership-card:focus .membership-card__link:focus {
         color: #ffffff;
         background: linear-gradient(111.72deg, #ed0233 1.6%, #003eb7 85.31%); }
 
@@ -1337,19 +1340,6 @@ img {
   color: #103aae;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease; }
-  .membership-card__price::before {
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    bottom: -7px;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: bold;
-    font-size: 100px;
-    line-height: 150%;
-    color: #e8e8e8;
-    opacity: 0.47; }
   .membership-card__price::after {
     content: "";
     position: absolute;
@@ -1363,14 +1353,21 @@ img {
     background-image: url("../img/ruble.svg");
     background-size: 30px 42px;
     background-repeat: no-repeat; }
-  .membership-card__price--with-trainer::before {
-    content: "5000"; }
-  .membership-card__price--noontime::before {
-    content: "1700"; }
-  .membership-card__price--noontime::after {
+  .membership-card__price--Y-offset::after {
     bottom: calc(50% - 5px); }
-  .membership-card__price--fullday::before {
-    content: "2700"; }
+  .membership-card__price .membership-card__background-price {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    bottom: -7px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 150%;
+    color: #e8e8e8;
+    opacity: 0.47; }
 
 .membership-card__link {
   width: 206px;
@@ -1390,10 +1387,10 @@ img {
     margin-bottom: 40px; }
   .membership-card__price {
     padding-right: 45px; }
-    .membership-card__price--1700 {
+    .membership-card__price--Y-offset {
       margin-top: 4px;
       margin-bottom: 30px; }
-      .membership-card__price--1700::after {
+      .membership-card__price--Y-offset::after {
         bottom: 50%; }
   .membership-card__wrapper {
     padding-bottom: 60px; } }
@@ -1421,7 +1418,7 @@ img {
       width: 24px;
       height: 33px;
       background-size: 24px 33px; }
-    .membership-card__price--1700 {
+    .membership-card__price--Y-offset {
       margin-bottom: 26px; }
   .membership-card__link {
     width: 100%; } }
