@@ -79,8 +79,6 @@
   transition: 0.4s ease;
   outline: none;
 
-  &:focus,
-  &:hover,
   &--active {
     position: relative;
     color: $foreground;
@@ -97,9 +95,12 @@
     }
   }
 
-  &:hover,
-  &:focus {
-    color: $foreground;
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 1;
   }
 }
 
