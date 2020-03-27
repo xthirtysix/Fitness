@@ -155,6 +155,7 @@
 
   var tariffDurations = document.querySelectorAll('.membership__link');
 
+
   var markActiveTab = function (evt) {
     tariffDurations.forEach(function (duration) {
       duration.classList.remove('membership__link--active');
@@ -204,4 +205,11 @@
     renderTwelveMonthsCards();
     markActiveTab(evt);
   });
+
+  tariffDurations.forEach(function (duration) {
+    duration.addEventListener('click', function (evt) {
+      evt.preventDefault();
+    });
+  });
+
 })();
