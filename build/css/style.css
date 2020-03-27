@@ -1154,10 +1154,10 @@ img {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   outline: none; }
-  .membership__link:focus, .membership__link:hover, .membership__link--active {
+  .membership__link--active {
     position: relative;
     color: #102654; }
-    .membership__link:focus::after, .membership__link:hover::after, .membership__link--active::after {
+    .membership__link--active::after {
       content: "";
       position: absolute;
       bottom: -2px;
@@ -1166,8 +1166,10 @@ img {
       width: 100%;
       height: 2px;
       background-color: #d10a42; }
-  .membership__link:hover, .membership__link:focus {
-    color: #102654; }
+  .membership__link:hover {
+    opacity: 0.3; }
+  .membership__link:active {
+    opacity: 1; }
 
 .membership__options {
   display: -webkit-box;

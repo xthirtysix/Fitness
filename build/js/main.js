@@ -190,21 +190,6 @@
     renderTwelveMonthsCards();
     markActiveTab(evt);
   });
-  oneMonthLink.addEventListener('mouseover', function (evt) {
-    evt.preventDefault();
-    renderOneMonthCards();
-    markActiveTab(evt);
-  });
-  sixMonthsLink.addEventListener('mouseover', function (evt) {
-    evt.preventDefault();
-    renderSixMonthsCards();
-    markActiveTab(evt);
-  });
-  twelveMonthsLink.addEventListener('mouseover', function (evt) {
-    evt.preventDefault();
-    renderTwelveMonthsCards();
-    markActiveTab(evt);
-  });
 
   tariffDurations.forEach(function (duration) {
     duration.addEventListener('click', function (evt) {
