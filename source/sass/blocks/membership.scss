@@ -14,7 +14,6 @@
     height: 494px;
     background-repeat: no-repeat;
     background-size: 287px 494px;
-    background-position: center;
   }
 }
 
@@ -25,8 +24,6 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     &::before {
-      width: 574px;
-      height: 987px;
       background-image: url("../img/rod-pancakes@2x.png");
     }
   }
@@ -39,8 +36,6 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     &::before {
-      width: 574px;
-      height: 987px;
       background-image: url("../img/rod-pancakes@2x.webp");
     }
   }

@@ -1100,16 +1100,13 @@ img {
     width: 287px;
     height: 494px;
     background-repeat: no-repeat;
-    background-size: 287px 494px;
-    background-position: center; }
+    background-size: 287px 494px; }
 
 .no-webp .membership::before {
   background-image: url("../img/rod-pancakes.png"); }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .no-webp .membership::before {
-    width: 574px;
-    height: 987px;
     background-image: url("../img/rod-pancakes@2x.png"); } }
 
 .webp .membership::before {
@@ -1117,8 +1114,6 @@ img {
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .webp .membership::before {
-    width: 574px;
-    height: 987px;
     background-image: url("../img/rod-pancakes@2x.webp"); } }
 
 .membership__header {
@@ -3004,7 +2999,10 @@ img {
     line-height: 19px; }
   .footer__social-list {
     margin-top: 10px;
-    width: 100%; }
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .footer__social-item {
     margin-right: 35px;
     margin-left: 0; }
