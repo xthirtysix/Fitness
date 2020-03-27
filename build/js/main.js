@@ -157,9 +157,10 @@
 
 
   var markActiveTab = function (evt) {
-    tariffDurations.forEach(function (duration) {
-      duration.classList.remove('membership__link--active');
-    });
+    for (var i = 0; i < tariffDurations.length; i++) {
+      tariffDurations[i].classList.remove('membership__link--active');
+    }
+
     evt.target.classList.add('membership__link--active');
   };
 
@@ -191,10 +192,10 @@
     markActiveTab(evt);
   });
 
-  tariffDurations.forEach(function (duration) {
-    duration.addEventListener('click', function (evt) {
+  for (var i = 0; i < tariffDurations.length; i++) {
+    tariffDurations[i].addEventListener('click', function (evt) {
       evt.preventDefault();
     });
-  });
+  }
 
 })();
