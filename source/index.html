@@ -7,7 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Supergym</title>
   <meta name="Description" content="Лэндинг фитнес центра Supergym">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="./fonts/roboto-condensed-v18-latin_cyrillic-300.woff2" as="font">
+  <link rel="preload" href="./fonts/roboto-condensed-v18-latin_cyrillic-400.woff2" as="font">
+  <link rel="preload" href="./fonts/roboto-condensed-v18-latin_cyrillic-700.woff2" as="font">
+  <link rel="preload" href="./fonts/bebas-neue-regular.woff2" as="font">
+  <link rel="preload" href="./fonts/bebas-neue-bold.woff2" as="font">
+  <link rel="preload" href="./js/vendor.js">
+  <link rel="preload" href="./js/main.js">
   <link rel="stylesheet" rel="preload" type="text/css" href="css/style.min.css">
+
 </head>
 
 <body>
@@ -617,11 +626,11 @@
     </section>
     <section class="feedback">
       <div class="container feedback__container swiper-container">
-        <h3 class="section-header feedback__header">Отзывы</h3>
+        <h2 class="section-header feedback__header">Отзывы</h2>
         <ul class="feedback__list swiper-wrapper">
           <li class="feedback__item swiper-slide">
             <article class="feedback__card">
-              <h4 class="feedback__name">Анна Орлова</h4>
+              <h3 class="feedback__name">Анна Орлова</h3>
               <p class="feedback__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда
                 чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
               </p>
@@ -635,7 +644,7 @@
           </li>
           <li class="feedback__item swiper-slide">
             <article class="feedback__card">
-              <h4 class="feedback__name">аволрО аннА</h4>
+              <h3 class="feedback__name">аволрО аннА</h3>
               <p class="feedback__text">«йедеречо тен ямерв еенречев в ежад ,йынротсорп лаЗ .йынбюлежурд ланосреп
                 ,тюялвонбо ырежанерт ,отсич адгесв ебулк в отч ,ястиварН .адог ешьлоб ежу bulCrepuS в ужоХ»</p>
               <picture>
@@ -669,7 +678,7 @@
           <h2 class="section-header section-header--inversed free-training__header">
             Бесплатное занятие
           </h2>
-          <form class="free-training__form" action="POST">
+          <form class="free-training__form" method="POST">
             <label class="free-training__container" for="name">
               <input type="text" name="free-training" id="name" placeholder="Имя">
             </label>
@@ -701,8 +710,9 @@
               <a href="mailto:omsk@supergym.ru" class="contacts__description contacts__link">omsk@supergym.ru</a>
             </li>
           </ul>
+        </section>
       </div>
-      </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">
